@@ -1,0 +1,42 @@
+/* Button Component */
+$button-default-color: $primaryColor;
+$button-default-background-color: #FFFFFF;
+$button-primary-color: #FFFFFF;
+$button-primary-background-color: $primaryColor;
+$button-secondary-color: #626262;
+$button-secondary-background-color: #F0F2F5;
+$button-secondary-border-color: #A2A6AD;
+$button-positive-color: $primaryColor;
+$button-positive-background-color: #FFFFFF;
+$button-negative-color: #FFFFFF;
+$button-negative-background-color: #A4AAB3;
+
+$button-font-size: 16px;
+
+/* InfoItem Component */
+$info-item-title-color: #171819;
+$info-item-subtitle-color: #B8B8B8;
+
+$info-item-title-font-size: 15px;
+$info-item-subtitle-font-size: 12px;
+
+/* bottom line */
+$line-bg-color: #EEEEEE;
+
+/* toolbar */
+$toolbar-background-color: #FFFFFF;
+$toolbar-item-background-color: #FFFFFF;
+
+$toolbar-button-color: #171819;
+$toolbar-title-color: #171819;
+
+$toolbar-button-font-size: 15px;
+$toolbar-title-font-size: 18px;
+
+
+/* FormItem Component */
+$form-item-title-color:#333333;
+$form-item-value-color: #C3C3C3;
+
+$form-item-title-font-size: 14px;
+$form-item-value-font-size: 13px;

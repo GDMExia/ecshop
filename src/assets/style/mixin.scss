@@ -1,0 +1,179 @@
+// 背景图片地址和大小
+@mixin bis($url) {
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//  圆角边框
+@mixin borderRadius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+//定位全屏
+@mixin allcover{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+//定位水平垂直居中
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+//定位垂直居中
+@mixin ct {
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位水平居中
+@mixin cl {
+	position: absolute;
+	left: 50%;
+  transform: translateX(-50%);
+}
+
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+	font-weight: normal;
+}
+
+//flex 布局和 子元素 对其方式
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+}
+
+// 图片水平居中
+@mixin ilc{
+	margin-left: auto;
+	margin-right:auto;
+	display:block;
+}
+
+// 绝对定位在底部
+@mixin pb {
+	position: absolute;
+	bottom: 0px;
+}
+
+@mixin pd($topdis, $bottomdis, $leftdis, $rightdis) {
+	position: absolute;
+	top: $topdis;
+	bottom: $bottomdis;
+	left: $leftdis;
+	right: $rightdis;
+}
+
+@mixin input {
+	border: none;
+	border-radius: 0px;
+	color: $formInputColor;
+	font-size: 14px;
+	height: -webkit-fill-available;
+	border-bottom: 1px solid $lineColor;
+	margin-left: 10px;
+	padding-right: 10px;
+	outline: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	&:focus {
+		outline-style: none;
+		outline: none;
+	}
+}
+
+@mixin formInput {
+	border: 0px;
+	color: $formInputColor;
+	font-size: 14px;
+	height: -webkit-fill-available;
+	padding-left: 0px;
+	padding-right: 0px;
+	&:focus {
+	outline-style: none;
+	}
+}
+
+@mixin button {
+	border-radius: 4px;
+	height: 44px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@mixin linear-gradient($leftColor, $rightColor) {
+	background: -webkit-linear-gradient(left, $leftColor , $rightColor); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, $leftColor, $rightColor); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, $leftColor, $rightColor); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, $leftColor , $rightColor); /* 标准的语法（必须放在最后） */
+}
+
+@mixin header {
+	height: 44px;
+	color: #48505D;
+	font-size: 18px;
+	background-color: #fff;
+	padding: 2px 0px;
+}
+
+@mixin limit-line($lineCount) {
+	overflow: hidden;
+	// text-overflow: ellipsis;
+	// white-space: nowrap;
+	display:-moz-box;
+	display:-webkit-box;
+	display:box;
+	-webkit-line-clamp: $lineCount;
+	-moz-line-clamp: lineCount;
+	-moz-box-orient:vertical;
+	-webkit-box-orient:vertical;
+	box-orient:vertical;
+}
+
+@mixin thin-border() {
+	position: relative;
+	&:after{
+	    content: '';
+	    height: 1px;  //控制边框宽度
+	    width: 200%;  //控制边框长度
+	    position: absolute;
+	    left: 0px;
+	    top: auto;
+	    right: auto;
+	    bottom: 0px;
+	    background-color: rgba(232,234,237,1);
+	    border: 0px solid transparent;
+	    border-radius: 0px;
+	    -webkit-border-radius: 0px;
+	    transform: scale(0.5);  //缩放宽度，达到0.5px的效果
+	    -webkit-transform: scale(0.5);
+	    -moz-transform: scale(0.5);
+	    -ms-transform: scale(0.5);
+	    -o-transform: scale(0.5);
+	    transform-origin: top left;  //定义缩放基点
+	    -webkit-transform-origin: top left;
+	    -moz-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	    -o-transform-origin: top left;
+	}
+}

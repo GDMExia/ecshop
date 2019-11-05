@@ -1,0 +1,40 @@
+html {
+	background-color: #F0F2F5;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+             SimSun, sans-serif;
+    -webkit-overflow-scrolling: touch;
+}
+
+div, a, ul, p, h1, h2, h3, h4, h5, h6, span, li, ol, dl {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+input[type='text'],
+input[type='number'] {
+	-webkit-appearance: none;
+}
+
+::-webkit-search-cancel-button {
+	display: none;
+}
